@@ -1,18 +1,18 @@
 @font-face {
   font-family: CipherFontA;
-  src: url(/assets/CipherFontA.ttf);
+  src: url(./assets/CipherFontA.ttf);
 }
 @font-face {
   font-family: CipherFontB;
-  src: url(/assets/CipherFontB.ttf);
+  src: url(./assets/CipherFontB.ttf);
 }
 @font-face {
   font-family: StrangeRunes;
-  src: url(/assets/StrangeRunes.ttf);
+  src: url(./assets/StrangeRunes.ttf);
 }
 @font-face {
   font-family: Theraprism;
-  src: url(/assets/Theraprism.ttf);
+  src: url(./assets/Theraprism.ttf);
 }
 
 *, *::before, *::after {
