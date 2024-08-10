@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/index.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+  <main class="container mx-auto">
+
+    <h1>CRYPTOGRAM CODEX</h1>
+    <p>Made by <a class="hover:underline" target="_blank" rel="noreferer noopener"
+        href="https://github.com/pipisasa">@Pipisasa</a> with ❤️</p>
+
+    <table class="fonts-table">
+      <thead>
+      </thead>
+      <tbody>
+        <!-- <tr>
+          <th>Plain text</th>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+          <td>P</td>
+          <td>Q</td>
+          <td>R</td>
+          <td>S</td>
+          <td>T</td>
+          <td>U</td>
+          <td>V</td>
+          <td>W</td>
+          <td>X</td>
+          <td>Y</td>
+          <td>Z</td>
+        </tr>
+        <tr class="cipher-font-a">
+          <th class="normal-font">Chipher Font A</th>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+          <td>P</td>
+          <td>Q</td>
+          <td>R</td>
+          <td>S</td>
+          <td>T</td>
+          <td>U</td>
+          <td>V</td>
+          <td>W</td>
+          <td>X</td>
+          <td>Y</td>
+          <td>Z</td>
+        </tr>
+        <tr class="cipher-font-b">
+          <th class="normal-font">Cipher Font B</th>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+          <td>P</td>
+          <td>Q</td>
+          <td>R</td>
+          <td>S</td>
+          <td>T</td>
+          <td>U</td>
+          <td>V</td>
+          <td>W</td>
+          <td>X</td>
+          <td>Y</td>
+          <td>Z</td>
+        </tr>
+        <tr class="strange-runes">
+          <th class="normal-font">Strange Runes</th>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+          <td>P</td>
+          <td>Q</td>
+          <td>R</td>
+          <td>S</td>
+          <td>T</td>
+          <td>U</td>
+          <td>V</td>
+          <td>W</td>
+          <td>X</td>
+          <td>Y</td>
+          <td>Z</td>
+        </tr>
+        <tr class="theraprism">
+          <th class="normal-font">Theraprism</th>
+          <td>A</td>
+          <td>B</td>
+          <td>C</td>
+          <td>D</td>
+          <td>E</td>
+          <td>F</td>
+          <td>G</td>
+          <td>H</td>
+          <td>I</td>
+          <td>J</td>
+          <td>K</td>
+          <td>L</td>
+          <td>M</td>
+          <td>N</td>
+          <td>O</td>
+          <td>P</td>
+          <td>Q</td>
+          <td>R</td>
+          <td>S</td>
+          <td>T</td>
+          <td>U</td>
+          <td>V</td>
+          <td>W</td>
+          <td>X</td>
+          <td>Y</td>
+          <td>Z</td>
+        </tr> -->
+      </tbody>
+    </table>
+    <div>
+      <div class="decoded">
+        <h2 class="text-2xl font-bold">How to use</h2>
+        <p>Click on the font you want to use and then type the text you want to encrypt.</p>
+        <textarea class="w-full border border-gray-500 rounded-md p-2"></textarea>
+      </div>
+      <div class="encoded">
+      </div>
+    </div>
+  </main>
+  <script>
+    const alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    const fonts = [
+      {
+        class: 'normal-font',
+        name: 'Plain text'
+      },
+      {
+        class: 'cipher-font-a',
+        name: 'Chipher Font A'
+      },
+      {
+        class: 'cipher-font-b',
+        name: 'Cipher Font B'
+      },
+      {
+        class: 'strange-runes',
+        name: 'Strange Runes'
+      },
+      {
+        class: 'theraprism',
+        name: 'Theraprism'
+      }
+    ];
+    const table = document.querySelector('.fonts-table');
+    const textarea = document.querySelector('textarea');
+    const encoded = document.querySelector('.encoded');
+
+    const handler = event => {
+      const button = event.currentTarget;
+      const text = button.innerText;
+      textarea.value += text;
+      update();
+    };
+
+    const update = () => {
+      const text = textarea.value;
+      for (let i = 0; i < fonts.length; i++) {
+        const font = fonts[i];
+        const encodedDiv = document.querySelector(`.encoded-${font.class}-div`);
+        const encodedP = document.querySelector(`.encoded-${font.class}-p`);
+        encodedP.innerText = text;
+      }
+    }
+
+    textarea.addEventListener('input', update);
+
+    for (let i = 0; i < fonts.length; i++) {
+      const font = fonts[i];
+      const tr = document.createElement('tr');
+      tr.classList.add(font.class);
+
+      const th = document.createElement('th');
+      th.innerText = font.name;
+      th.classList.add('normal-font');
+      th.classList.add('text-left');
+      th.classList.add('p-1');
+      tr.appendChild(th);
+
+      for (let j = 0; j < alphabet.length; j++) {
+        const letter = alphabet[j];
+        const td = document.createElement('td');
+        const button = document.createElement('button');
+        button.innerText = letter;
+        button.classList.add('text-center', 'p-1', 'cursor-pointer', 'hover:bg-gray-200', 'w-full');
+        button.addEventListener('click', handler);
+        td.appendChild(button);
+        tr.appendChild(td);
+      }
+      table.appendChild(tr);
+
+      const encodedDiv = document.createElement('div');
+      encodedDiv.classList.add('encoded', `encoded-${font.class}-div`);
+
+      const encodedH2 = document.createElement('h2');
+      encodedH2.innerText = `${font.name}:`;
+      encodedH2.classList.add('font-bold', `encoded-${font.class}-h2`);
+      encodedDiv.appendChild(encodedH2);
+
+      const encodedP = document.createElement('p');
+      encodedP.classList.add(`encoded-${font.class}-p`, font.class);
+      encodedDiv.appendChild(encodedP);
+
+      encoded.appendChild(encodedDiv);
+    }
+  </script>
+</body>
+
+</html>

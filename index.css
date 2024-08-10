@@ -1,0 +1,54 @@
+@font-face {
+  font-family: CipherFontA;
+  src: url(/assets/CipherFontA.ttf);
+}
+@font-face {
+  font-family: CipherFontB;
+  src: url(/assets/CipherFontB.ttf);
+}
+@font-face {
+  font-family: StrangeRunes;
+  src: url(/assets/StrangeRunes.ttf);
+}
+@font-face {
+  font-family: Theraprism;
+  src: url(/assets/Theraprism.ttf);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+.fonts-table, .fonts-table th, .fonts-table td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.normal-font {
+  font-family: sans-serif !important;
+  font-size: 1rem;
+}
+
+.cipher-font-a {
+  font-family: CipherFontA;
+  font-size: 2rem;
+}
+.cipher-font-b {
+  font-family: CipherFontB;
+  font-size: 2rem;
+}
+.strange-runes {
+  font-family: StrangeRunes;
+  font-size: 2rem;
+}
+.theraprism {
+  font-family: Theraprism;
+  font-size: 2rem;
+}
